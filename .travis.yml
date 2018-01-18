@@ -2,7 +2,7 @@ language: python
 python:
     - "2.7"
 
-script: make test
+script: pytest
 deploy:
   on:
     branch: master
