@@ -1,16 +1,18 @@
 html {
-    background: -moz-linear-gradient(top, rgba(254,255,185,1) 0%, rgba(254,255,185,1) 1%, rgba(254,255,185,0.99) 15%, rgba(254,255,185,0.98) 31%, rgba(254,255,185,0.97) 45%, rgba(254,255,185,0.97) 49%, rgba(254,255,185,0.75) 69%, rgba(254,255,185,0.57) 85%, rgba(254,255,185,0.4) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(254,255,185,1) 0%,rgba(254,255,185,1) 1%,rgba(254,255,185,0.99) 15%,rgba(254,255,185,0.98) 31%,rgba(254,255,185,0.97) 45%,rgba(254,255,185,0.97) 49%,rgba(254,255,185,0.75) 69%,rgba(254,255,185,0.57) 85%,rgba(254,255,185,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(254,255,185,1) 0%,rgba(254,255,185,1) 1%,rgba(254,255,185,0.99) 15%,rgba(254,255,185,0.98) 31%,rgba(254,255,185,0.97) 45%,rgba(254,255,185,0.97) 49%,rgba(254,255,185,0.75) 69%,rgba(254,255,185,0.57) 85%,rgba(254,255,185,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffb9', endColorstr='#66feffb9',GradientType=0 );
-    background-size: 100%;
-    height: 100%
+    height: 100%;
 }
 
 body {
     font-family: 'Cutive Mono', monospace;
     letter-spacing: 0.01em;
     font-weight: 100px;
+    background: -moz-linear-gradient(top, rgba(254,255,185,1) 0%, rgba(254,255,185,1) 1%, rgba(254,255,185,0.99) 15%, rgba(254,255,185,0.98) 31%, rgba(254,255,185,0.97) 45%, rgba(254,255,185,0.97) 49%, rgba(254,255,185,0.75) 69%, rgba(254,255,185,0.57) 85%, rgba(254,255,185,0.4) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(254,255,185,1) 0%,rgba(254,255,185,1) 1%,rgba(254,255,185,0.99) 15%,rgba(254,255,185,0.98) 31%,rgba(254,255,185,0.97) 45%,rgba(254,255,185,0.97) 49%,rgba(254,255,185,0.75) 69%,rgba(254,255,185,0.57) 85%,rgba(254,255,185,0.4) 100%) ; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(254,255,185,1) 0%,rgba(254,255,185,1) 1%,rgba(254,255,185,0.99) 15%,rgba(254,255,185,0.98) 31%,rgba(254,255,185,0.97) 45%,rgba(254,255,185,0.97) 49%,rgba(254,255,185,0.75) 69%,rgba(254,255,185,0.57) 85%,rgba(254,255,185,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffb9', endColorstr='#66feffb9',GradientType=0 );
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
 }
 
 .main-container {
@@ -18,6 +20,8 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
+
+
 }
 
 .info-div {
