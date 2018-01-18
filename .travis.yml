@@ -8,13 +8,10 @@ install:
   - pip install awscli
 
 deploy:
-# Control deployment by setting a value for `on`. Setting the `branch`
-# option to `master` means Travis will only attempt a deployment on
-# builds of your repo's master branch (e.g., after you merge a PR).
-on:
-  branch: master
-provider: s3
-access_key_id: $AWS_ACCESS_KEY_ID
-secret_access_key: $AWS_SECRET_ACCESS_KEY
-bucket: scotchandrose.com.au
-skip_cleanup: true
+  on:
+    branch: master
+  provider: s3
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  bucket: scotchandrose.com.au
+  skip_cleanup: true
