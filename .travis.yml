@@ -1,6 +1,6 @@
 language: python
 python:
-    - "2.7"
+    - "3.5"
 
 script: true
 deploy:
@@ -9,5 +9,5 @@ deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  bucket: scotchandrose.com.au
+  bucket: http://scotchandrose.com.au.s3-website-ap-southeast-2.amazonaws.com
   skip_cleanup: true
